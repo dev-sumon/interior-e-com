@@ -415,9 +415,26 @@
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
 }
-/* feedback section css start  */
 
-/* all_product_section css ernd */
+/* feedback section css start  */
+.all_product_section .section_title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  color: #000;
+}
+
+.all_product_section .section_desc p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+}
+
+/* all_product_section css end */
 .feedback_section {
   padding-top: 50px;
 }
