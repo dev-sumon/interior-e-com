@@ -45,7 +45,7 @@
 }
 
 /* Products Section */
-.category_section .section_title h2 {
+/* .category_section .section_title h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -80,6 +80,69 @@
   height: 750px;
   background-size: cover;
   background-repeat: no-repeat;
+} */
+
+/* Category Cards */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.category-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Filter Section */
+.filter-section {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.filter-buttons .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-outline-primary {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 /* category section css start */
@@ -921,3 +984,15 @@
 
 /* product list section css end */
 /* product page css end */
+
+
+
+
+
+
+
+/* responsive start  */
+
+
+
+/* responsive end  */
