@@ -76,15 +76,14 @@
     <section class="hero_section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-md-6 col-12">
                     <div class="hero_content">
                         <h1>Transform Your Space with Premium Interior Solutions</h1>
-                        <p>Discover our exclusive collection of furniture and home decor items that bring elegance and
-                            comfort to your living space.</p>
+                        <p>Discover our exclusive collection...</p>
                         <a href="#" class="btn btn">Shop Now</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-12">
                     <div class="hero_image">
                         <img src="images/products/New Project (9).jpg" alt="Interior Design" class="img-fluid">
                     </div>
@@ -96,7 +95,265 @@
 
     </section> -->
 
-    <section class="category_section">
+
+    <section class="categories-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Product Categories</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="category-card" onclick="filterProducts('materials')">
+                        <img src="images/New Project (11).jpg" alt="Interior Materials" class="img-fluid">
+                        <div class="category-overlay">
+                            <h3>Interior Materials</h3>
+                            <p>Tiles, Flooring, Wall Panels & More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="category-card" onclick="filterProducts('furniture')">
+                        <img src="images/products/protfolio_7.jpg" alt="Interior Furniture" class="img-fluid">
+                        <div class="category-overlay">
+                            <h3>Interior Furniture</h3>
+                            <p>Sofas, Chairs, Tables & Storage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Filter  -->
+    <section class="filter-section py-3 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="filter-buttons">
+                        <button class="btn btn-outline-primary active" onclick="filterProducts('all')">All
+                            Products</button>
+                        <button class="btn btn-outline-primary" onclick="filterProducts('materials')">Materials</button>
+                        <button class="btn btn-outline-primary" onclick="filterProducts('furniture')">Furniture</button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <select class="form-select d-inline-block w-auto" onchange="sortProducts(this.value)">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="all_product_section mt-5">
+        <div class="container">
+            <!-- <div class="section_title">
+                <h2>All Products</h2>
+            </div>
+            <div class="borderr">
+                <span></span>
+            </div>
+            <div class="section_desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic quas blanditiis maiores
+                    doloremque iure iste maxime earum adipisci praesentium...</p>
+            </div> -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
+                        <div class="product-actions">
+                            <a href="" class="action-btn"><i class="fas fa-heart"></i></a>
+                            <a href="product.html" class="action-btn"><i class="fas fa-eye"></i></a>
+                            <a href="" class="action-btn"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
+                        <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
+                        <div class="price-section">
+                            <span class="price">৳২,৫০০</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            কার্টে যোগ করুন
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="category_section">
         <div class="section_title">
             <h2>Category</h2>
             <div class="borderr">
@@ -152,7 +409,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="featured">
         <div class="container">
             <div class="section-header mb-5">
@@ -165,11 +422,9 @@
                     will secure your preferred role in the global job market. You can enroll in any of our courses,
                     whenever it suits you.
                 </p>
-                <!-- <p class="section-subtitle">Our Best Selling Product</p> -->
             </div>
             <div class="product-grid">
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -179,19 +434,11 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -200,7 +447,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge new">নতুন</div> -->
                     <div class="product-image">
                         <img src="images/products/protfolio_10.jpg" alt="লাক্সারি সোফা সেট">
                         <div class="product-actions">
@@ -210,13 +456,6 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">লাক্সারি সোফা সেট</a>
                         <p class="product-description">৫ সিটের আরামদায়ক সোফা</p>
                         <div class="price-section">
@@ -238,13 +477,6 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
                         <a href="">আধুনিক ঝাড়বাতি</a>
                         <p class="product-description">ক্রিস্টাল ডিজাইনের LED ঝাড়বাতি</p>
                         <div class="price-section">
@@ -266,13 +498,6 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">কাঠের ডাইনিং টেবিল</a>
                         <p class="product-description">৬ সিটের শক্ত কাঠের টেবিল</p>
                         <div class="price-section">
@@ -287,10 +512,13 @@
             </div>
         </div>
     </section>
-    <div class="all_product_section">
+    <!-- <section class="all_product_section">
         <div class="container">
             <div class="section_title">
                 <h2>All Products</h2>
+            </div>
+            <div class="borderr">
+                <span></span>
             </div>
             <div class="section_desc">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic quas blanditiis maiores
@@ -298,7 +526,6 @@
             </div>
             <div class="product-grid">
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -308,19 +535,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -329,7 +547,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -339,19 +556,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -360,7 +568,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -370,19 +577,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -391,7 +589,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -401,19 +598,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -422,7 +610,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -432,19 +619,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -453,7 +631,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -463,19 +640,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -484,7 +652,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -494,19 +661,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -515,7 +673,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -525,19 +682,10 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
-                            <!-- <span class="price-old">৳৩,০০০</span> -->
                             <span class="price">৳২,৫০০</span>
-                            <!-- <span class="price-unit">/ বর্গফুট</span> -->
                         </div>
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
@@ -546,7 +694,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <!-- <div class="product-badge">বেস্ট সেলার</div> -->
                     <div class="product-image">
                         <img src="images/products/New Project (9).jpg" alt="প্রিমিয়াম মার্বেল টাইলস">
                         <div class="product-actions">
@@ -556,13 +703,6 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
                         <a href="">প্রিমিয়াম মার্বেল টাইলস</a>
                         <p class="product-description">উচ্চ মানের ইতালিয়ান মার্বেল</p>
                         <div class="price-section">
@@ -571,59 +711,7 @@
                         <button class="add-to-cart">
                             <i class="fas fa-shopping-cart"></i>
                             কার্টে যোগ করুন
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <section class="product_section">
-        <div class="container">
-            <div class="section_title">
-                <h2>Featured Products</h2>
-            </div>
-            <div class="title_sub_title">
-                <span>
-                    Explore the best of Furnisy Featured Collection.
-                </span>
-            </div>
-            <div class="product_items">
-                <div class="item">
-                    <div class="image">
-                        <img src="images/products/protfolio_10.jpg" alt="">
-                    </div>
-                    <div class="icon">
-                         <a href=""><i class="fa-regular fa-heart"></i></a>
-                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                       
-                    </div>
-                    <div class="title">
-                        <h2><a href="">Products1</a></h2>
-                    </div>
-                    <div class="price_and_order">
-                        <div class="price">
-                            <h3>Price: <span>500$</span></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="images/products/protfolio_10.jpg" alt="">
-                    </div>
-                    <div class="icon">
-                         <a href=""><i class="fa-regular fa-heart"></i></a>
-                        <a href=""><i class="fa-solid fa-eye"></i></a>
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                       
-                    </div>
-                    <div class="title">
-                        <h2><a href="">Products1</a></h2>
-                    </div>
-                    <div class="price_and_order">
-                        <div class="price">
-                            <h3>Price: <span>500$</span></h3>
-                        </div>
+
                     </div>
                 </div>
             </div>
