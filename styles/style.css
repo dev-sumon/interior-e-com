@@ -323,7 +323,9 @@
   opacity: 1;
   transform: translateX(0);
 }
-
+.action-btn a{
+  text-decoration: none;
+}
 .action-btn {
   width: 45px;
   height: 45px;
@@ -388,7 +390,7 @@
 .product-info a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #fe0000;
@@ -421,9 +423,8 @@
 
 .price {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-  /* background: linear-gradient(135deg, #00ffff 0%, #ff0080 50%, #8000ff 100%); */
+  font-size: 20px;
+  font-weight: 400;
   color: #fe0000;
   background-clip: text;
   margin: 0;
@@ -647,15 +648,33 @@
 }
 
 .details_section .main_column .details_column .product_add {
-  display: flex;
-  column-gap: 20px;
-  align-items: center;
-  margin-top: 20px;
+  /* display: flex;
+  column-gap: 20px; */
+  /* align-items: center;
+  margin-top: 20px; */
+}
+
+.details_section .main_column .details_column .product_add .cart {
+  margin-top: 30px;
+}
+
+.details_section .main_column .details_column .product_add .cart button {
+  /* padding: 7px 12px;
+  background-color: #fe0000;
+  color: #fff;
+  
+  border: none;
+  border-radius: 3px; */
+  width: 80%;
+}
+
+.details_section .main_column .details_column .product_add .cart i {
+  margin-right: 10px;
 }
 
 .details_section .main_column .details_column .product_add .cart a {
   text-decoration: none;
-  padding: 7px 12px;
+  /* padding: 7px 12px; */
   background-color: #fe0000;
   color: #fff;
   border-radius: 3px;
@@ -668,11 +687,24 @@
 
 .details_section .main_column .details_column .product_add .number p {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
   padding: 5px 10px;
   background: #f2f2f2;
   border-radius: 5px;
   margin: 0;
+}
+
+.details_section .main_column .details_column .product_add .number .positive:hover {
+  color: #fe0000;
+}
+
+.details_section .main_column .details_column .product_add .number .negative:hover {
+  color: #fe0000;
+}
+
+li::marker {
+  color: red;
+  font-size: 20px;
 }
 
 /* details_section end */
