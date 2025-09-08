@@ -930,6 +930,7 @@ li::marker {
   align-items: center;
   border: 2px solid #fe0000;
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 .cart_section .main_column .product .cart .info .number {
@@ -1040,15 +1041,26 @@ li::marker {
 
 /* footer css start */
 footer{
-  margin-top: 50px;
-  padding: 15px 0px;
-  background-color: #fe0000;
+  margin-top: 90px;
 }
-footer p{
+footer .footer_data{
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fe0000;
+  text-align: center;
+  padding: 15px 0px;
+  z-index: 1000;
+}
+
+footer p {
   text-align: center;
   margin: 0;
   color: #fff;
 }
+
 /* footer css end */
 
 
