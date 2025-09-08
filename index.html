@@ -108,7 +108,7 @@
         <div class="container">
             <h2 class="section-title text-center mb-5">Product Categories</h2>
             <div class="row">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel category-slider owl-theme">
                     <div class="item">
                         <div class="">
                             <div class="category-card" onclick="filterProducts('materials')">
@@ -786,7 +786,7 @@
         </div>
     </section> -->
 
-    <div class="our_clint_section">
+    <section class="our_clint_section">
         <div class="container">
             <div class="section-header mb-5">
                 <h2 class="section-title">OUR HONOURABLE CLIENTS</h2>
@@ -799,45 +799,77 @@
                 </p>
             </div>
             <div class="clint_list d-flex">
-                <div class="images">
-                    <img src="images/clicnt/1710049704.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/1710049969.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/1710049982.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/1710735097.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/1.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/2.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/3.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/4.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/5.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/6.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/7.png" alt="" width="100%">
-                </div>
-                <div class="images">
-                    <img src="images/clicnt/8.png" alt="" width="100%">
+                <div class="owl-carousel client-slider owl-theme">
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049704.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049969.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710049982.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1710735097.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/1.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/2.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/3.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images">
+                            <img src="images/clicnt/4.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/5.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/6.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/7.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="images text-center">
+                            <img src="images/clicnt/8.png" alt="" width="100%">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <footer>
+        <p>
+            Copyright © 2017 - 2025 DESIGN AND DEVELOPED BY CREATIVE SHEBA LIMITED
+        </p>
+    </footer>
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -855,7 +887,7 @@
 
     <!-- OwlCarousel js -->
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.category-slider').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -874,7 +906,26 @@
                     items: 3
                 }
             }
-        })
+        });
+
+
+
+
+        $('.client-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            smartSpeed: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 5 }   // ৫টা আইটেম
+            }
+        });
     </script>
 </body>
 
