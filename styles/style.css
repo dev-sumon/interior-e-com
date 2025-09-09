@@ -1040,10 +1040,11 @@ li::marker {
 /* clint section css end */
 
 /* footer css start */
-footer{
+footer {
   margin-top: 90px;
 }
-footer .footer_data{
+
+footer .footer_data {
   margin-top: 50px;
   position: fixed;
   bottom: 0;
@@ -1163,6 +1164,13 @@ footer p {
   }
 }
 
+@media(max-width: 767px) {
+  .hero_section .hero_content .button {
+    text-align: end;
+    margin-bottom: 22px;
+  }
+}
+
 @media(max-width: 480px) {
   .hero_section .hero_content h1 {
     font-size: 36px;
@@ -1173,9 +1181,9 @@ footer p {
     text-align: center;
   }
 
-  .hero_section .hero_content .btn {
+  /* .hero_section .hero_content .btn {
     display: none;
-  }
+  } */
 
   .hero_section .hero_content h1 {
     font-size: 28px;
