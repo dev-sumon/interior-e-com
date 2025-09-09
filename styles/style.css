@@ -1204,8 +1204,9 @@ footer p {
     padding: 20px;
   }
 
-  .product-info a {
-    font-size: 26px;
+  .add-to-cart a {
+    font-size: 17px;
+    font-weight: 500;
   }
 
   .product-description {
@@ -1239,6 +1240,10 @@ footer p {
 
   .cart_section .main_column .product .cart .images img {
     height: auto;
+  }
+
+  .add-to-cart {
+    padding: 7px 13px;
   }
 }
 
